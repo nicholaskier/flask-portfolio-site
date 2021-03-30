@@ -7,17 +7,20 @@
   <body>
     <header>
       <div class="container">
-        <h1 class="logo">Nicholas web app</h1>
+        <h1 class="logo">Nicholas' Web App</h1>
         <strong><nav>
           <ul class="menu">
             <li><a href="{{ url_for('home') }}">Home</a></li>
+            <!-- triggers "home" function in python file-->
             <li><a href="{{ url_for('about') }}">About</a></li>
+            <!-- triggers "about" fucntion in python file -->
           </ul>
         </nav></strong>
       </div>
     </header>
     <div class="container">
-        {%block content%}
+        {%block content%} 
+        <!-- template inheritance -->
         {%endblock%}
     </div>
   </body>
